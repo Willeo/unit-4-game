@@ -1,0 +1,10 @@
+.crystalImage {
+  height: 200px;
+  width: 100px;
+  padding: 10px;
+}
+.align {
+  margin: 0 auto;
+  background-image: url("../assets/ilumCrystalCave.jpg");
+  align-items: center;
+}
