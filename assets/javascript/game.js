@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  var numberToGuess = 69;
+  var numberToGuess = Math.floor(Math.random() * 101);
+  $("#numberToGuess").text(numberToGuess);
+  console.log(numberToGuess);
 
   var counter = 0;
 
@@ -10,8 +12,6 @@ $(document).ready(function() {
   var number3 = [3];
 
   var number4 = [7];
-
-  //var savedNum = $("button").text(Math.floor(Math.random() * 101));
 
   $("number1 number2 number3 number4").text(numberToGuess);
 
@@ -73,7 +73,6 @@ $(document).ready(function() {
 
   $("#reset").on("click", function() {
     reset();
-    Math.floor(Math.random() * 101);
   });
 
   $("button").click(function() {
